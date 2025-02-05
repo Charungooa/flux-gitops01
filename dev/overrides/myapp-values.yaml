@@ -1,0 +1,4 @@
+replicaCount: 2
+image:
+  repository: acrmicroservicedev.azurecr.io/myapp
+  tag: "latest"
