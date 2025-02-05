@@ -1,4 +1,4 @@
 replicaCount: 2
 image:
-  repository: acrmicroservicedev.azurecr.io/myapp
+  repository: terraacr2025dev.azurecr.io/myapp
   tag: "latest"
