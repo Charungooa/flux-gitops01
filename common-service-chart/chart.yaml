@@ -1,0 +1,4 @@
+apiVersion: v2
+name: common-service-chart
+description: A reusable Helm chart
+version: 1.0.0
