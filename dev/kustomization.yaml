@@ -1,14 +1,14 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: dev-kustom
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./common-service-chart
+  path: ./common-service-chart  # Ensure this path is correct
   prune: true
   sourceRef:
     kind: GitRepository
     name: dev-app-repo
-  # If using HelmRelease, do that instead. 
-  # For inline Helm with kustomization, some advanced config might differ.
+  timeout: 3m
+  retryInterval: 1m

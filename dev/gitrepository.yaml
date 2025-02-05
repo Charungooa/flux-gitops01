@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: "https://github.com/Charungooa/app-repo.git"
+  url: https://github.com/Charungooa/app-repo.git
   ref:
-    branch: dev
+    branch: dev  # Ensure this matches your app-repo branch
+  timeout: 60s
